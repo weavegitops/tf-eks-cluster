@@ -1,8 +1,10 @@
 # GitOpsify an EKS Cluster using TF-Controller from Weaveworks
 
-This repo explains how to apply the GitOps methodology to the Terraform config repo:  [Provision an EKS Cluster learn guide](https://learn.hashicorp.com/terraform/kubernetes/provision-eks-cluster), containing
+This repo explains how to apply the GitOps methodology to this Terraform config repo:  [Provision an EKS Cluster learn guide](https://learn.hashicorp.com/terraform/kubernetes/provision-eks-cluster), containing
 - Terraform configuration files to provision an EKS cluster on AWS.
-- Terraform custom resource to manage the tf resources defined in the above configuration files.
+
+We added to the above repo:
+- Terraform custom resource in this folder (/tf-controller-files) to manage the tf resources defined in the above configuration files.
 
 Here are the steps to make this run properly:
 1. I did use a **KinD Cluster** but feel free to use another type of k8s cluster (changes may apply though)
